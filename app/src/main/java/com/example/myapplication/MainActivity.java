@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                     Fragment fragment= null;
                     switch (item.getItemId()) {
                         case R.id.na_home:
-                        //    fragment = new SliderFragment();
+                          fragment = new FragmentSlider();
 
                             break;
                         case R.id.na_feadback:
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                           //  fragment= new ComplaintFragment();
                             break;
                         case R.id.na_profile:
-                            //   fragment= new ProfileFragment();
+                              fragment= new FragmentProfile();
                             break;
 
 
