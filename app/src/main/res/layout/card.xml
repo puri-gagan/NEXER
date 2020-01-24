@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:background="@android:color/transparent"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:id="@+id/celName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/imagelogo"
+                                android:src="@drawable/ic_person_black_24dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/celeName"
+                                android:textColor="@color/black"
+                                android:paddingRight="12dp"
+                                android:text="Sandip Lamichhane"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_below="@id/celName"
+                            android:background="@android:color/transparent"
+                            android:backgroundTint="@android:color/transparent"
+                            android:scaleType="fitXY"
+                            android:id="@+id/CelImage"
+                        android:src="@drawable/prashshan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:padding="10dp" />
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_below="@id/CelImage"
+                            android:id="@+id/Selfie"
+                            android:text="Selfie with Sandip Lamichhane"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/description"
+                            android:textColor="@color/black"
+                            android:text="50 Plants around Bhaktapur road lane separation"
+                            android:layout_below="@id/Selfie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+
+</RelativeLayout>
