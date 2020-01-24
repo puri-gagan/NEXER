@@ -7,13 +7,15 @@
     android:layout_height="match_parent">
 
 <LinearLayout
+    android:padding="10dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
                 <androidx.cardview.widget.CardView
+
                     android:background="@android:color/transparent"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="5dp"
-                    app:cardCornerRadius="18dp"
+                    app:cardCornerRadius="15dp"
                     app:cardElevation="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -25,18 +27,87 @@
                             android:id="@+id/celName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/myCardView"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:cardCornerRadius="25dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true">
                             <ImageView
+                                android:scaleType="centerCrop"
                                 android:id="@+id/imagelogo"
                                 android:src="@drawable/ic_person_black_24dp"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"/>
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"/>
+                            </androidx.cardview.widget.CardView>
                             <TextView
+                                android:layout_marginLeft="12dp"
                                 android:id="@+id/celeName"
                                 android:textColor="@color/black"
                                 android:paddingRight="12dp"
+                                android:textSize="20sp"
                                 android:text="Sandip Lamichhane"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"/>
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="0dp">
+                            <TextView
+                                android:id="@+id/desc1"
+                                android:visibility="invisible"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"/>
+                            <TextView
+                                android:id="@+id/desc2"
+                                android:visibility="invisible"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"/>
+                            <TextView
+                                android:id="@+id/desc3"
+                                android:visibility="invisible"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"/>
+                            <TextView
+                                android:id="@+id/rew1"
+                                android:visibility="invisible"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"/>
+                            <TextView
+                                android:visibility="invisible"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"/>
+                            <TextView
+                                android:id="@+id/rew2"
+                                android:visibility="invisible"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"/>
+                            <TextView
+                                android:id="@+id/rew3"
+                                android:visibility="invisible"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/rul1"
+                                android:visibility="invisible"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"/>
+                            <TextView
+                                android:id="@+id/rul2"
+                                android:visibility="invisible"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"/>
+                            <TextView
+                                android:id="@+id/rul3"
+                                android:visibility="invisible"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"/>
+                            <TextView
+                                android:id="@+id/rul4"
+                                android:visibility="invisible"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"/>
+                            </RelativeLayout>
                         </LinearLayout>
 
                         <ImageView
@@ -50,6 +121,7 @@
                             android:layout_height="150dp"
                             android:padding="10dp" />
                         <TextView
+                            android:layout_marginLeft="10dp"
                             android:textColor="@color/black"
                             android:layout_below="@id/CelImage"
                             android:id="@+id/Selfie"
@@ -57,6 +129,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <TextView
+                            android:layout_marginLeft="10dp"
                             android:id="@+id/description"
                             android:textColor="@color/black"
                             android:text="50 Plants around Bhaktapur road lane separation"
