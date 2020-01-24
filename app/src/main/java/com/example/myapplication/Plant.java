@@ -4,52 +4,56 @@ package com.example.myapplication;
  * Created by Aws on 28/01/2018.
  */
 
-public class PBCCARD {
+public class Plant {
 
-    private String Title;
+    private String Txt1;
+    private String Txt2;
+    private String Txt3;
 
-    private int Thumbnail ;
+    private int Image2 ;
 
     private int Image ;
-    private  double Price;
 
-    public PBCCARD() {
+
+    public Plant() {
     }
 
-    public PBCCARD(String title, int image, int thumbnail) {
-        Title = title;
-        Thumbnail = thumbnail;
+    public Plant(String txt1,String txt2,String txt3, int image, int image2) {
+        Txt1 = txt1;
+        Txt2 = txt2;
+        Txt3 = txt3;
+        Image2=image2;
         Image=image;
+
     }
 
 
-    public String getTitle() {
-        return Title;
+    public String getTxt1() {
+        return Txt1;
+    }
+
+    public String getTxt2() {
+        return Txt2;
+    }
+
+    public String getTxt3() {
+        return Txt3;
+    }
+
+    public int getImage2() {
+        return Image2;
     }
 
 
-
-
-    public int getThumbnail() {
-        return Thumbnail;
-    }
 
     public int getImage() {
         return Image;
     }
 
 
-    public void setTitle(String title) {
-        Title = title;
-    }
 
 
 
-    public void setThumbnail(int thumbnail) {
-        Thumbnail = thumbnail;
-    }
 
-    public double getPrice() {
-        return Price;
-    }
+
 }

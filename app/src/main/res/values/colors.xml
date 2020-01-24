@@ -3,4 +3,20 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="colorOrange">#fd8c00</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="gradStart">#19AABB</color>
+    <color name="gradStop">#23A7DB</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="green"> #00FF00</color>
+    <color name="gradStart1">#f1a5f2</color>
+    <color name="gradCenter">#a177f5</color>
+    <color name="gradStop1">#208df4</color>
+    <color name="blue">#0565BE</color>
+    <color name="backgroundPrimary">#3B5998</color>
+    <color name="textblack">#354355</color>
+    <color name="dashcolor">#979797</color>
+    <color name="horizontal_line1">#f2f3f4</color>
+    <color name="horizontal_line">#D8D9DB</color>
 </resources>

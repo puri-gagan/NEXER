@@ -17,7 +17,7 @@
         android:title="Complaints"/>
     <item
         android:id="@+id/na_profile"
-        android:icon="@drawable/profile"
+        android:icon="@drawable/ic_person_black_24dp"
         android:title="Profile"/>
 
 
