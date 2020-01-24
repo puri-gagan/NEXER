@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/relativeMeat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:background="@android:color/transparent"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+
+                            android:background="@android:color/transparent"
+                            android:backgroundTint="@android:color/transparent"
+                            android:scaleType="fitXY"
+                            android:id="@+id/nrmlckn"
+                        android:src="@drawable/prashshan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp" />
+                    </RelativeLayout>
+                    <androidx.appcompat.widget.Toolbar
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                         android:layout_marginTop="25dp"
+                            android:id="@+id/nrmMeat" android:layout_marginBottom="1dp"
+                            android:textColorHint="@color/colorWhite"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/colorWhite"
+                            android:text="Budget Information"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </androidx.appcompat.widget.Toolbar>
+
+                        <ImageView
+                            android:scaleType="matrix"
+                            android:id="@+id/secondimg"
+                            android:visibility="invisible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+
+                </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+
+</RelativeLayout>
