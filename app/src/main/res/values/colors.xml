@@ -19,4 +19,6 @@
     <color name="dashcolor">#979797</color>
     <color name="horizontal_line1">#f2f3f4</color>
     <color name="horizontal_line">#D8D9DB</color>
+    <color name="dark_green">#056307</color>
+    <color name="taskback">#BA133802</color>
 </resources>
