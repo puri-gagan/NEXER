@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -12,22 +13,21 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.e_prashasan.ForAllActivity;
 
 import java.util.List;
 
-public class PBC extends RecyclerView.Adapter<PBC.MyCardHolder> {
+public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyCardHolder> {
 
 
     //this context we will use to inflate the layout
     private Context mCtx;
 
     //we are storing all the products in a list
-    private List<PBCCARD> MeatList;
+    private List<Plant> PlantList;
 
-    public PBC(Context mCtx, List<PBCCARD> MeatList) {
+    public PlantAdapter(Context mCtx, List<Plant> PlantList) {
         this.mCtx = mCtx;
-        this.MeatList = MeatList;
+        this.PlantList = PlantList;
     }
 
     @NonNull
@@ -40,17 +40,22 @@ public class PBC extends RecyclerView.Adapter<PBC.MyCardHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyCardHolder holder, final int position) {
-        holder.Image2.setImageDrawable(mCtx.getResources().getDrawable(MeatList.get(position).getThumbnail()));
-        holder.Title.setText(MeatList.get(position).getTitle());
-        holder.Image.setImageDrawable(mCtx.getResources().getDrawable(MeatList.get(position).getThumbnail()));
-        holder.relativeLayoutmeat.setOnClickListener(new View.OnClickListener() {
+       holder.Image1.setImageDrawable(mCtx.getResources().getDrawable(PlantList.get(position).getImage2()));
+        holder.Image.setImageDrawable(mCtx.getResources().getDrawable(PlantList.get(position).getImage()));
+        holder.Txt1.setText(PlantList.get(position).getTxt1());
+        holder.Txt2.setText(PlantList.get(position).getTxt2());
+        holder.Txt3.setText(PlantList.get(position).getTxt3());
+
+       holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(mCtx, ForAllActivity.class);
-                intent.putExtra("image2",MeatList.get(position).getImage());
-                intent.putExtra("image", MeatList.get(position).getThumbnail());
-                intent.putExtra("title",MeatList.get(position).getTitle());
-                intent.putExtra("prices",MeatList.get(position).getPrice());
+                intent.putExtra("image2",PlantList.get(position).getImage());
+                intent.putExtra("image", PlantList.get(position).getImage2());
+                intent.putExtra("title",PlantList.get(position).getTxt1());
+                intent.putExtra("title1",PlantList.get(position).getTxt2());
+                intent.putExtra("title2",PlantList.get(position).getTxt3());
+
                 mCtx.startActivity(intent);
             }
         });
@@ -60,21 +65,23 @@ public class PBC extends RecyclerView.Adapter<PBC.MyCardHolder> {
 
     @Override
     public int getItemCount() {
-        return MeatList.size();
+        return PlantList.size();
     }
 
 
 
     public static class MyCardHolder extends  RecyclerView.ViewHolder {
-        TextView Title,Price;
-        ImageView Image, Image2;
-        RelativeLayout relativeLayoutmeat;
+        TextView Txt1,Txt2,Txt3;
+        ImageView Image, Image1;
+        RelativeLayout relativeLayout;
         public MyCardHolder(@NonNull View itemView) {
             super(itemView);
-            Image2=(ImageView) itemView.findViewById(R.id.secondimg);
-            Title = (TextView) itemView.findViewById(R.id.nrmMeat);
-            Image = (ImageView)itemView.findViewById(R.id.nrmlckn);
-            relativeLayoutmeat=(RelativeLayout)itemView.findViewById(R.id.relativeMeat);
+            Txt1=(TextView)itemView.findViewById(R.id.celeName);
+            Txt2=(TextView)itemView.findViewById(R.id.Selfie);
+            Txt3=(TextView)itemView.findViewById(R.id.description);
+            Image1=(ImageView) itemView.findViewById(R.id.imagelogo);
+            Image = (ImageView)itemView.findViewById(R.id.CelImage);
+            relativeLayout=(RelativeLayout)itemView.findViewById(R.id.relative);
         }
     }
 

@@ -1,4 +1,4 @@
-package com.example.e_prashasan.adapter;
+package com.example.myapplication;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,10 +8,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.example.e_prashasan.R;
 import com.smarteist.autoimageslider.SliderViewAdapter;
 
-public class SliderAdapterExample extends SliderViewAdapter<SliderAdapterExample.SliderAdapterVH> {
+
+public class SliderAdapterExample extends SliderViewAdapter<SliderAdapterExample.SliderAdapterVHH> {
 
     private Context context;
 
@@ -19,56 +19,50 @@ public class SliderAdapterExample extends SliderViewAdapter<SliderAdapterExample
         this.context = context;
     }
 
-
-
     @Override
-    public SliderAdapterVH onCreateViewHolder(ViewGroup parent) {
+    public SliderAdapterVHH onCreateViewHolder(ViewGroup parent) {
         View inflate = LayoutInflater.from(parent.getContext()).inflate(R.layout.sliderview, null);
-        return new SliderAdapterVH(inflate);
+        return new SliderAdapterVHH(inflate);
     }
 
     @Override
-    public void onBindViewHolder(SliderAdapterVH viewHolder, int position) {
-
+    public void onBindViewHolder(SliderAdapterVHH viewHolder, int position) {
         switch (position) {
             case 0:
                 Glide.with(viewHolder.itemView)
-                        .load(R.drawable.education)
+                        .load(R.drawable.ic_home_black_24dp)
                         .into(viewHolder.imageViewBackground);
                 break;
             case 1:
                 Glide.with(viewHolder.itemView)
-                        .load(R.drawable.law)
+                        .load(R.drawable.ic_feedback_black_24dp)
                         .into(viewHolder.imageViewBackground);
                 break;
             case 2:
                 Glide.with(viewHolder.itemView)
-                        .load(R.drawable.arthaman)
+                        .load(R.drawable.ic_home_black_24dp)
                         .into(viewHolder.imageViewBackground);
                 break;
             default:
                 Glide.with(viewHolder.itemView)
-                       .load(R.drawable.agriculture)
+                        .load(R.drawable.ic_feedback_black_24dp)
                         .into(viewHolder.imageViewBackground);
                 break;
 
         }
-
     }
 
     @Override
     public int getCount() {
-        //slider view count could be dynamic size
         return 4;
     }
 
-    class SliderAdapterVH extends SliderViewAdapter.ViewHolder {
-
+    public class SliderAdapterVHH extends SliderViewAdapter.ViewHolder {
         View itemView;
         ImageView imageViewBackground;
         TextView textViewDescription;
 
-        public SliderAdapterVH(View itemView) {
+        public SliderAdapterVHH(View itemView) {
             super(itemView);
             imageViewBackground = itemView.findViewById(R.id.slideImage);
             this.itemView = itemView;
