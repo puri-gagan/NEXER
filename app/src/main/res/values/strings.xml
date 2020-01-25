@@ -3,5 +3,15 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="Category_options">
+        <item>Choose interests</item>
+        <item>Football</item>
+        <item>Cricket</item>
+        <item>Movies</item>
+        <item>Musics</item>
+        <item>News</item>
+        <item>politics</item>
+        <item>Religions</item>
+    </string-array>
 
 </resources>

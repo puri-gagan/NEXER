@@ -20,11 +20,12 @@
 
     <View
         android:layout_below="@+id/Toolbar"
-        android:background="@color/green"
+        android:background="#11CFC5"
         android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="220dp" />
+        android:layout_height="240dp" />
     <LinearLayout
+        android:layout_marginTop="40dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:orientation="vertical"
@@ -157,28 +158,31 @@
                                 android:text="Interests:"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"/>
-                            <TextView
-                                android:textColor="@color/black"
+                            <com.google.android.material.chip.ChipGroup
+                                android:layout_marginTop="30dp"
                                 android:layout_marginLeft="10dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="10dp"
-                                android:textStyle="bold"
-                                android:textSize="18sp"
-                                android:text="Cricket"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"/>
-                            <TextView
-                                android:textColor="@color/black"
-                                android:layout_marginLeft="10dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="10dp"
-                                android:textStyle="bold"
-                                android:textSize="18sp"
-                                android:text="Football"
+                                android:id="@+id/chipgroup"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"/>
                         </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="50dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/searchDilog"
+                                android:textColor="@color/colorWhite"
+                                android:elevation="10dp"
+                                android:background="@drawable/circular_btn"
+                                android:text="Add Interest"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
 

@@ -45,12 +45,12 @@ public class MainActivity extends AppCompatActivity {
 
                             break;
                         case R.id.na_feadback:
-                       //     fragment=new FeedbackFragment();
+                           fragment=new AcceptedFragment();
                             // Intent intent = new Intent(MainActivity.this,WalkActivity.class);
                             // startActivity(intent);
                             break;
                         case R.id.na_complaint:
-                          //  fragment= new ComplaintFragment();
+                            fragment= new SettingFragment();
                             break;
                         case R.id.na_profile:
                               fragment= new FragmentProfile();

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcceptedFragment">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <androidx.appcompat.widget.Toolbar
+            android:background="@color/taskback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/Titletext"
+                android:textSize="15sp"
+                android:textColor="@color/colorWhite"
+                android:text="Accepted Challenges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cardvieW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+
+        <RelativeLayout
+
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="0dp"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="130dp"
+                android:layout_height="103dp"
+                android:padding="7dp"
+                android:src="@drawable/sandip" />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="241dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imageView"
+
+                android:text="Selfie With Sandip lamichhane:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:textColor="@android:color/background_dark"
+                android:id="@+id/textViewShortDesc"
+                android:autoSizeTextType="uniform"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/textViewTitle"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/imageView"
+                android:text="Plant at least 5 trees in you surroundings or any suitable areas where trees are needed most......"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textSize="5sp" />
+
+            <TextView
+                android:paddingTop="2dp"
+                android:id="@+id/Address"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewShortDesc"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="27dp"
+                android:layout_toRightOf="@id/imageView"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="Sandeep Lamichhane"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cardvieW1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+
+        <RelativeLayout
+
+            android:id="@+id/relative01"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="0dp"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="130dp"
+                android:layout_height="103dp"
+                android:padding="7dp"
+                android:src="@drawable/rabi" />
+
+            <TextView
+                android:id="@+id/textViewTitle1"
+                android:layout_width="241dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imageView1"
+
+                android:text="Selfie With Rabi lamichhane:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:textColor="@android:color/background_dark"
+                android:id="@+id/textViewShortDesc1"
+                android:autoSizeTextType="uniform"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/textViewTitle1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/imageView1"
+                android:text="Plant at least 5 trees in you surroundings or any suitable areas where trees are needed most......"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textSize="5sp" />
+
+            <TextView
+                android:paddingTop="2dp"
+                android:id="@+id/Address1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewShortDesc1"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="27dp"
+                android:layout_toRightOf="@id/imageView1"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="Rabi Lamichhane"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cardvieW2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+
+        <RelativeLayout
+
+            android:id="@+id/relative02"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="0dp"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="130dp"
+                android:layout_height="103dp"
+                android:padding="7dp"
+                android:src="@drawable/rajeshhamal" />
+
+            <TextView
+                android:id="@+id/textViewTitle2"
+                android:layout_width="241dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imageView2"
+
+                android:text="Selfie With Rajesh Hamal:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:textColor="@android:color/background_dark"
+                android:id="@+id/textViewShortDesc2"
+                android:autoSizeTextType="uniform"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/textViewTitle2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/imageView2"
+                android:text="Plant at least 5 trees in you surroundings or any suitable areas where trees are needed most......"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textSize="5sp" />
+
+            <TextView
+                android:paddingTop="2dp"
+                android:id="@+id/Address2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewShortDesc2"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="27dp"
+                android:layout_toRightOf="@id/imageView2"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="Rajesh Hamal"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
