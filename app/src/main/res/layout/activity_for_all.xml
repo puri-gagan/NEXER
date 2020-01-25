@@ -20,7 +20,7 @@
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/Titletext"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 android:textColor="@color/colorWhite"
                 android:text="Plant Atleast 5 Trees"
                 android:layout_width="match_parent"
@@ -48,7 +48,7 @@
             android:scaleType="fitXY"
             android:src="@drawable/slide1"
             android:layout_width="match_parent"
-            android:layout_height="150dp"/>
+            android:layout_height="180dp"/>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview1"

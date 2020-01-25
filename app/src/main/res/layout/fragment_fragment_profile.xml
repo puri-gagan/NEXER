@@ -6,20 +6,33 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".FragmentProfile">
-<androidx.appcompat.widget.Toolbar
-    android:background="@color/taskback"
-    android:id="@+id/Toolbar"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <TextView
-        android:textSize="15sp"
-        android:text="Profile"
+    <LinearLayout
+        android:id="@+id/toolbar2"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-</androidx.appcompat.widget.Toolbar>
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <androidx.appcompat.widget.Toolbar
+            android:background="@color/taskback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/Titletext"
+                android:textSize="18sp"
+                android:textColor="@color/colorWhite"
+                android:text="Profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.Toolbar>
+
+    </LinearLayout>
 
     <View
-        android:layout_below="@+id/Toolbar"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/toolbar2"
         android:background="#11CFC5"
         android:id="@+id/view"
         android:layout_width="match_parent"
