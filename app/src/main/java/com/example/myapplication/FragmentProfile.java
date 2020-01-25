@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AlertDialog;
@@ -69,6 +70,8 @@ public class FragmentProfile extends Fragment {
 
                                 chip =(Chip)layoutInflater.inflate(R.layout.chip_items,null,false);
                                 chip.setChipText(text);
+                                chip.setTextColor(Color.WHITE);
+                                chip.setHintTextColor(Color.WHITE);
                                 chip.setSingleLine();
 
                                 chip.setOnCloseIconClickListener(new View.OnClickListener() {

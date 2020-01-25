@@ -10,7 +10,7 @@
 
         android:id="@+id/na_feadback"
         android:icon="@drawable/ic_message_black_24dp"
-        android:title="Complaints"/>
+        android:title="Challenges"/>
     <item
         android:id="@+id/na_complaint"
         android:icon="@drawable/ic_settings_black_24dp"
