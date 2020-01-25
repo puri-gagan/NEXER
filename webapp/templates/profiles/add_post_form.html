@@ -1,0 +1,27 @@
+<main class="discussion-mp" id="add_form">	
+			<div class="main-section">
+				<div class="container">
+					<div class="row justify-content-md-center">
+						<div class="col-lg-8 col-md-8">
+							<div class="checkout-heading text-center">
+								<h2>Add New Challenge</h2>								
+							</div>
+							<form method="post" action="/add_note/" enctype="multipart/form-data" id="post_form">
+    {% csrf_token %}
+    Title: <input id="post_form_title" name="note_title" placeholder="Enter the title of challenge"><br /><br />
+    Description:<textarea class="form-control" rows="4" name="note_text" id="post_form_text" placeholder="Enter Post text here..."></textarea><br />
+    Rules:<textarea class="form-control" rows="4" name="note_rules" id="post_form_rules" placeholder="Rules for the challenge, objectives"></textarea><br />
+    Awards:<textarea class="form-control" rows="4" name="note_awards" id="post_form_award" placeholder="Award on completing the challenge"></textarea><br />
+    <input id="post_form_author_id" name="author_id" type="hidden" value="{{user.userprofile.id}}"/>
+    <input id="post_form_parent_id" name="parent_id" type="hidden" value="{{userprofile.userwall.id}}"/>
+    <input id="post_form_user_id" name="user_id" type="hidden" value="{{request.user.id}}"/>
+    <input type="file" name="attachment" id="posts_form_photo" />
+
+    <input type="hidden" name="_class" value="Post" />
+    <p><button type="submit" class="btn btn-default" id="add_post">Add post</button></p>
+</form>															
+						</div>											
+					</div>					
+				</div>
+			</div>
+		</main>
