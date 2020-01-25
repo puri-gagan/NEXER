@@ -32,11 +32,12 @@
     </LinearLayout>
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
         <LinearLayout
+
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
     <androidx.cardview.widget.CardView
         android:layout_marginTop="5dp"
         android:layout_width="match_parent"
@@ -73,6 +74,8 @@
                 android:paddingLeft="8dp">
 
                 <TextView
+
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Description:"
@@ -98,7 +101,7 @@
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content">
                   <TextView
-                      android:text="1."
+                      android:text="1)"
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"/>
 
@@ -113,7 +116,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:text="2."
+                        android:text="2)"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 <TextView
@@ -127,7 +130,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:text="3."
+                        android:text="3)"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 <TextView
@@ -163,6 +166,7 @@
                 android:paddingLeft="8dp">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Rewards:"
@@ -188,7 +192,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:text="1."
+                        android:text="1)"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 <TextView
@@ -202,7 +206,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:text="2."
+                        android:text="2)"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 <TextView
@@ -216,7 +220,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:text="3."
+                        android:text="3)"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 <TextView
@@ -253,6 +257,7 @@
                 android:paddingLeft="8dp">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Rules:"
@@ -278,7 +283,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:text="1."
+                        android:text="1)"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 <TextView
@@ -292,7 +297,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:text="2."
+                        android:text="2)"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 <TextView
@@ -306,7 +311,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:text="3."
+                        android:text="3)"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 <TextView
@@ -320,7 +325,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:text="4."
+                        android:text="4)"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 <TextView
@@ -331,7 +336,26 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
+
+/>    </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="end"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp">
+                <Button
+                    android:elevation="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/circular_btn"
+                    android:text="Accept"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
         </LinearLayout>
         </ScrollView>
 

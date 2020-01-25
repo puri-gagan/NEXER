@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".FragmentProfile">
+<androidx.appcompat.widget.Toolbar
+    android:background="@color/taskback"
+    android:id="@+id/Toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="15sp"
+        android:text="Profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_below="@+id/Toolbar"
+        android:background="#11CFC5"
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="240dp" />
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginTop="90dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:elevation="1dp"
+            android:src="@drawable/prfl"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="15dp"
+                    app:contentPadding="15dp"
+                    app:contentPaddingBottom="15dp"
+                    app:contentPaddingRight="15dp"
+                    app:contentPaddingLeft="15dp"
+                    app:contentPaddingTop="15dp"
+                    android:layout_marginTop="85dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="60dp"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:text="Ashish Dahal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:text="Die Hard Fan Of Sandip Lamichhane"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginLeft="30dp"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:text="Recent Award:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="15dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:text="Signed Cricket Bat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="30dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:text="20 Missions Accepted"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="15dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:text="15 Completed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginLeft="50dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/black"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:text="Interests:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <com.google.android.material.chip.ChipGroup
+                                android:layout_marginTop="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/chipgroup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="50dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/searchDilog"
+                                android:textColor="@color/colorWhite"
+                                android:elevation="10dp"
+                                android:background="@drawable/circular_btn"
+                                android:text="Add Interest"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

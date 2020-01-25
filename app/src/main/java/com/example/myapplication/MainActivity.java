@@ -41,19 +41,19 @@ public class MainActivity extends AppCompatActivity {
                     Fragment fragment= null;
                     switch (item.getItemId()) {
                         case R.id.na_home:
-                        //    fragment = new SliderFragment();
+                          fragment = new FragmentSlider();
 
                             break;
                         case R.id.na_feadback:
-                       //     fragment=new FeedbackFragment();
+                           fragment=new AcceptedFragment();
                             // Intent intent = new Intent(MainActivity.this,WalkActivity.class);
                             // startActivity(intent);
                             break;
                         case R.id.na_complaint:
-                          //  fragment= new ComplaintFragment();
+                            fragment= new SettingFragment();
                             break;
                         case R.id.na_profile:
-                            //   fragment= new ProfileFragment();
+                              fragment= new FragmentProfile();
                             break;
 
 
